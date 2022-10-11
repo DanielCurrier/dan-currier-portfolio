@@ -13,9 +13,11 @@ h1 {
     
 }
 h2 {
-    background-color: var(--card);
+   /*  background-color: var(--card); */
     font-family: var(--mainfont);
-    font-size: 25px;
+    font-size: 36px;
+    float: left;
+    padding-top: 2%;
 }
 h3 {
     font-size: 20px;
@@ -24,15 +26,19 @@ h3 {
 p {
     font-family: var(--mainfont);
     font-size: larger;
+    padding-right: 30%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%;
 }
 /*Header and Footer Elements*/
-.endcaps {
-    justify-content: space-between;
+.header {
+    display: flex;
     align-items: center;
     padding: 2%;
     background-color:var(--main) ;
   }
-  .nav-list ul {
+  .header .nav-list ul {
     display: inline-flex;
     flex-wrap: wrap;
     list-style: none;
@@ -53,30 +59,33 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 .flex-container .headings{
     margin-bottom: 20px;
     padding-right: 20px;
 }
 
 .flex-container .about-me{
- flex: 2
+ flex: 1 1 33%;
+ align-items: center;
+ margin-left: 26%;
+ padding-top: 2%;
 }
 
 .about-me img{
  width: 250px;
  height: 250px;
  align-content: flex-start;
+ padding-top: 2%;
+ padding-left: 2%;
+ border-style: solid;
+ border-bottom-color: white;
+ border-right-color: white;
+ border-top-color: white;
+ border-radius: 4px;
 }
 
-.flex-container aside {
- flex: 1 ;
- background-color : var(--card)
-}
-
-.flex-container aside > *{
-    width: 33%;
-    height: 50%;
-}
 
 .card-container {
     display: flex;
@@ -84,41 +93,58 @@ p {
     align-content: flex-end;
     width: 52%;
     left: 25%;
-    margin-left: 800px;
+    margin-left: 26%;
+    padding-left: 3%;
     gap: 1em;
+    border-style: solid;
+    border-bottom-color: white;
+    border-right-color: white;
+    border-top-color: white;
+    border-radius: 4px;
 }
 /* .card-container > *{
  flex: 1 1 100%;  
 } */
 .card {
-    flex:1;
- border-style: solid;
+ flex:1 1 33%;
  justify-content: center;
- background-color: var(--card);
+ background-color: var(--beeg-card);
  gap: 5px;
  padding: 2px;
  margin: 4px;
 }
 
 .card img {
-    height: 400px;
-    width: 400px;
+    height: 95%;
+    width: 100%;
     display: flex;
     align-items: flex-end;
 }
 #horiseon {
-    flex: 2;
+    flex: 2 2 66%;
 
 }
 #horiseon img{
-    height: 800px;
-    width: 800px;
+    height: 95%;
+    width: 100%;
 }
 
-.card img:hover {
+.card:hover {
     transform: scale(1.01);
     box-shadow: 10px 10px 10px rgba(0,0,0,.5);
     z-index: 2;
+}
+
+.contact-me ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    gap: 6em;
+    font-family: var(--mainfont);
+    font-size: larger;
+    padding: 2%;
+    padding-left: 16%
 }
 
 /* Media Elements */
@@ -134,41 +160,3 @@ p {
     }
     
 }
-
-/* .card-container {
-    
-    /* position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: flex-start;
-    width: 75%;
-    left: 25%; } */
-
-
-    /* .endcaps .nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-between;
-    gap: 3px;
-} */
-/* header nav ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-header nav ul li a {
-    padding: 20px 10px;
-} */
-    /* .card-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.card-container > * {
-  flex-grow: 1 1 33%;
-} */
