@@ -1,4 +1,4 @@
-/* Main Elements*/
+/* Body Elements*/
 :root {
 --main: #0000A3;
 --card: #0067B3;
@@ -10,6 +10,7 @@ h1 {
     color: var(--endcaps);
     font-family: var(--mainfont);
     font-size: 30px;
+    
 }
 h2 {
     background-color: var(--card);
@@ -22,32 +23,22 @@ h3 {
 }
 p {
     font-family: var(--mainfont);
+    font-size: larger;
 }
+/*Header and Footer Elements*/
 .endcaps {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2%;
     background-color:var(--main) ;
   }
-.flex-container {
-    display: flex;
+  .nav-list ul {
+    display: inline-flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    width:100% ;
+    list-style: none;
+    justify-content: space-between;
+    gap: 10px;
 }
-
-.flex-container > * {
-    flex-grow: 1;
-    flex-basis: 33%;
-}
-
-.flex .nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
-}
-
 .nav-list a {
     flex-grow: 1;
     flex-shrink: 1;
@@ -57,29 +48,80 @@ p {
 .nav-list a:hover {
     color: white
 }
-
-.flex-container aside {
-   flex: 1 
+  /*Main Elements*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-container .headings{
+    margin-bottom: 20px;
+    padding-right: 20px;
 }
 
-.cards {
- flex: 2;
+.flex-container .about-me{
+ flex: 2
+}
+
+.about-me img{
+ width: 250px;
+ height: 250px;
+ align-content: flex-start;
+}
+
+.flex-container aside {
+ flex: 1 ;
+ background-color : var(--card)
+}
+
+.flex-container aside > *{
+    width: 33%;
+    height: 50%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 52%;
+    left: 25%;
+    margin-left: 800px;
+    gap: 1em;
+}
+/* .card-container > *{
+ flex: 1 1 100%;  
+} */
+.card {
+    flex:1;
+ border-style: solid;
+ justify-content: center;
  background-color: var(--card);
  gap: 5px;
  padding: 2px;
- border-radius: 10px;
- margin: 4px;}
+ margin: 4px;
+}
 
-.cards img {
-    width: 100%;
-} 
-.cards img :hover {
+.card img {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+#horiseon {
+    flex: 2;
+
+}
+#horiseon img{
+    height: 800px;
+    width: 800px;
+}
+
+.card img:hover {
     transform: scale(1.01);
     box-shadow: 10px 10px 10px rgba(0,0,0,.5);
     z-index: 2;
 }
 
-
+/* Media Elements */
 
 @media screen and (max-width: 768px) {
     header,
@@ -105,4 +147,28 @@ p {
     width: 75%;
     left: 25%; } */
 
-    
+
+    /* .endcaps .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    gap: 3px;
+} */
+/* header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+header nav ul li a {
+    padding: 20px 10px;
+} */
+    /* .card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-container > * {
+  flex-grow: 1 1 33%;
+} */

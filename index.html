@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel N. Currier</title>
-    <link rel="stylesheet" type= text/css href=".\assets\reset.css">
-    <link rel="stylesheet" type= text/css href=".\assets\style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel N. Currier</title>
+  <link rel="stylesheet" type=text/css href=".\assets\reset.css">
+  <link rel="stylesheet" type=text/css href=".\assets\style.css">
 </head>
 
 
-<body>   
- <header class="endcaps">
-        <h1>Daniel N. Currier</h1>
-        <nav class="nav-list">
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact</a>
-        <a href="#">Resume</a>
-        </nav>
- </header>
-
-<main class="flex-container">
-  <aside class="flex-aside" >
-    
-        <h2> About Me</h2>
-        <h2>Work</h2>   
-        <h2>Contact Me</h2> 
-  </aside>
-<article>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-</article>
-
-<section class="big-card">
- <figure>
-     <h3>Horiseon Refactor</h3>
-     <img src="assets\images\digital-marketing-meeting.jpg" alt="marketing meeting"/>
- </figure>
-</section>
-<section class="cards">
-<figure>
-  <h3>The Elder Scrolls 7: Warzone</h3>
-  <img src="assets\images\skeletons.jpg" alt="skeletons">
-</figure>
-<figure>
- <h3>Snake 2: 2 Snakes 2 Furious</h3>
- <img src="assets\images\snake-2.jpg" alt="snake with sunglasses">
-</figure>
-<figure>
- <h3>Half Life 3</h3>
- <img src="assets\images\half-life-3.png" alt="half-life-3">
-</figure>
-<figure>
- <h3>Door Grabber 3000</h3>
- <img src="assets\images\doorgrabber.jpg" alt="mechanical hand">
-</figure>
-</section>         
- </main>
-
-<footer class="endcaps">
-    <h1>Contact Me</h1>
+<body>
+  <header class="endcaps">
+    <h1>Daniel N. Currier</h1>
     <nav class="nav-list">
-    <a href="">201-478-2196</a>
-    <a href= mailto: dcurrier585@gmail.com>dcurrier585@gmail.com</a>
-    <a href="https://www.linkedin.com/in/daniel-currier-145096185/">LinkedIn</a>
-    <a href="https://github.com/LordDanklin">GitHub</a>
-    <a href="https://open.spotify.com/">Spotify</a>
+      <ul>
+        <li><a href="#About Me">About Me</a></li>
+        <li><a href="#Work">Work</a></li>
+        <li><a href="#Contact Me">Contact</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
     </nav>
-</footer>
+  </header>
+  
+  <main class="flex-container">
+    <aside> 
+    <ul>
+      <li>
+       <h2>About Me</h2>
+      </li>
+      <li>
+       <h2>Work</h2>
+      </li>
+      <li>
+       <h2>Contact Me</h2>
+      </li>
+    </ul>
+    </aside>
+    <section class="about-me">
+      <div>
+      <img src="assets\images\profile.jpg" alt="My Profile Picture" >
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum."</p>
+      </div>
+    </section>
+
+    <section class>
+      <div class="card-container">
+      <div class="card horiseon">
+        <h3>Horiseon Refactor</h3>
+        <img src="assets\images\digital-marketing-meeting.jpg" alt="marketing meeting" id="horiseon"/>
+      </div>
+      <div class="card">
+        <h3>The Elder Scrolls 7: Warzone</h3>
+        <img src="assets\images\skeletons.jpg" alt="skeletons">
+      </div>
+      <div class="card">
+        <h3>Snake 2: 2 Snakes 2 Furious</h3>
+        <img src="assets\images\snake-2.jpg" alt="snake with sunglasses">
+      </div>
+      <div class="card">
+        <h3>Half Life 3</h3>
+        <img src="assets\images\half-life-3.png" alt="half-life-3">
+      </div>
+      <div class="card">
+        <h3>Door Grabber 3000</h3>
+        <img src="assets\images\doorgrabber.jpg" alt="mechanical hand">
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer class="endcaps">
+    
+    <ul class="nav-list">
+      <li><a href="">201-478-2196</a></li>
+      <li><a href=mailto: dcurrier585@gmail.com>dcurrier585@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/daniel-currier-145096185/">LinkedIn</a></li>
+      <li><a href="https://github.com/LordDanklin">GitHub</a></li>
+      <li><a href="https://open.spotify.com/">Spotify</a></li>
+    </ul>
+  </footer>
 </body>
+
 </html>
