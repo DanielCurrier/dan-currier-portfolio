@@ -102,9 +102,7 @@ p {
     border-top-color: white;
     border-radius: 4px;
 }
-/* .card-container > *{
- flex: 1 1 100%;  
-} */
+
 .card {
  flex:1 1 33%;
  justify-content: center;
@@ -144,7 +142,7 @@ p {
     font-family: var(--mainfont);
     font-size: larger;
     padding: 2%;
-    padding-left: 16%
+    padding-left: 21%
 }
 .contact-me ul a {
     align-items: flex-end;
